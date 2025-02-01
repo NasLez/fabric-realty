@@ -93,6 +93,9 @@ if [ ! -f "docker-compose.yml" ]; then
 fi
 
 log_info "执行 docker-compose up -d..."
+cd web
+docker build -t fabric-realty.web:latest .
+cd ..
 docker-compose up -d
 if [ $? -ne 0 ]; then
     log_error "应用服务启动失败！"
