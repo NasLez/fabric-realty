@@ -29,6 +29,30 @@
         <div class="card-title">银行（Org2）</div>
         <div class="card-description">负责交易的完成确认</div>
       </router-link>
+
+      <router-link to="/realty-agency" class="card">
+        <div class="card-icon">
+          <HomeOutlined />
+        </div>
+        <div class="card-title">不动产登记机构（Org1）</div>
+        <div class="card-description">负责房产信息的登记</div>
+      </router-link>
+
+      <router-link to="/trading-platform" class="card">
+        <div class="card-icon">
+          <ShopOutlined />
+        </div>
+        <div class="card-title">交易平台（Org3）</div>
+        <div class="card-description">负责生成交易信息</div>
+      </router-link>
+
+      <router-link to="/bank" class="card">
+        <div class="card-icon">
+          <BankOutlined />
+        </div>
+        <div class="card-title">银行（Org2）</div>
+        <div class="card-description">负责交易的完成确认</div>
+      </router-link>
     </div>
   </div>
 </template>
