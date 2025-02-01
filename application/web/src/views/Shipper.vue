@@ -115,6 +115,10 @@
         @cancel="handleModalCancel"
         :confirmLoading="modalLoading"
     >
+      <a-button @click="generateRandomAll">
+        <template #icon><ReloadOutlined /></template>
+        随机生成
+      </a-button>
       <a-form
           ref="formRef"
           :model="formState"
@@ -421,6 +425,11 @@ const generateRandomOwner = () => {
   formState.owner = generateRandomName();
 };
 
+const generateRandomAll = () => {
+  generateRandomOwner()
+  generateRandomAreaHandler()
+  generateRandomAddressHandler()
+}
 const handleCopy = (text: string) => {
   copyToClipboard(text);
 };
