@@ -30,12 +30,12 @@
         <div class="card-description">负责交易的完成确认</div>
       </router-link>
 
-      <router-link to="/realty-agency" class="card">
+      <router-link to="/shipper" class="card">
         <div class="card-icon">
           <HomeOutlined />
         </div>
-        <div class="card-title">不动产登记机构（Org1）</div>
-        <div class="card-description">负责房产信息的登记</div>
+        <div class="card-title">船公司（Org1）</div>
+        <div class="card-description">负责提单的签发和签收</div>
       </router-link>
 
       <router-link to="/trading-platform" class="card">
